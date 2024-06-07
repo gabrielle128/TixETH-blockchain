@@ -56,12 +56,12 @@
             <!-- ticket item start -->
             <div class="ticket-container">
             <div class="ticket">
-                <h2 class="ticket-title">itzy 2nd world tour born to be</h2>
+                <h2 id="ticket-name" class="ticket-title">itzy 2nd world tour born to be</h2>
                 <hr>
-                    <div class="ticket-detail">
-                    <h2 class="ticket-price">Price:&ensp; <span>1.5 ETH</span></h2>
-                    <h2 class="total-tickets">Total Tickets:&nbsp; <span>1000</span></h2>
-                    <p class="original-address">Original Owner:&emsp; <span>0xc5e43E3Bf03719FCdc551a0dbD6B8f5779d4C8ca</span></p>
+                <div class="ticket-detail">
+                    <h2 class="ticket-price">Price:&ensp; <span id="ticket-price">1.5 ETH</span></h2>
+                    <h2 class="total-tickets">Total Tickets:&nbsp; <span id="total-tickets">1000</span></h2>
+                    <p class="original-address">Original Owner:&emsp; <span id="original-address">0xc5e43E3Bf03719FCdc551a0dbD6B8f5779d4C8ca</span></p>
                 </div>
                     <div class="ticket-rip">
                     <div class="circle-left"></div>
@@ -69,7 +69,7 @@
                     <div class="circle-right"></div>
                 </div>
                     <div class="ticket-sub-detail">
-                    <a href="buy_tickets.html" class="btn btn-theme-outline">buy tickets</a>
+                    <a href="buy_tickets.html" id="buy-tickets-btn" class="btn btn-theme-outline">buy tickets</a>
                 </div>
             </div>
             </div>
@@ -79,5 +79,41 @@
         <!-- buy tickets section end -->
 
     </div>
+    <script type="module" src="../index.js"></script>
     </body>
 </html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>TiARGET</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav id="header" class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand">TiARGET</a>
+        <div id="account" class="d-flex"></div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="tickets"></div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html> -->

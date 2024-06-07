@@ -1,0 +1,35 @@
+index.html
+- wala ata need na paltan na variable dito? (for now AHAHAHAHA)
+
+buy_tickets.html
+- madisplay dito eong nacreate na ticket thru create_event
+- id ng mga variables (same id sa create_event):
+    - line 59: id="ticket-name"
+    - line 62: id="ticket-price"
+    - line 63: id="total-tickets"
+    - line 64: id="original-address"
+- line 72: id="buy-tickets-btn" (ala pa siyang functionality pero yung concept is magpopopup na eong wallet tas confirm or reject ganun ayern)
+
+
+create_event.html
+- id ng mga input variables:
+    - line 59: id="ticket-name"
+    - line 62: id="ticket-price"
+    - line 65: id="-total-tickets"
+- line 67: onClick button id="create-event-btn"
+- inde aq nakagawa ng id kung sang address ma-save after magcreate ng event mwehehe
+
+
+accounts.html
+- nitry q idisplay eong account na nakalogin sa metamask, working na siya based don sa index.js (wala me ginalaw don AHAHAHA)
+- id ng mga variables:
+    - line 52: id="account" (eto eong address nung nakalogin na wallet)
+    - line 60: id="ticket-name"
+    - line 63: id="ticket-price"
+    - line 64: id="-total-tickets"
+    - line 65: id="original-address"
+    - line 66: id="current-address" 
+
+
+
+
