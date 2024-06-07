@@ -7,11 +7,12 @@
         name="viewport"
         content="width=device-width, initial-scale=1.0"
     />
-    <title>TiARGET</title>
-        <link rel="stylesheet" href="../css/font-awesome.css" />
-        <link rel="stylesheet" href="../css/bootstrap.min.css" />
-        <link rel="stylesheet" href="../css/color-1.css" />
-        <link rel="stylesheet" href="../css/style.css" />
+    <title>TixETH</title>
+    <link rel="icon" type="image/x-icon" href="../images/tiarget-logo.ico">
+    <link rel="stylesheet" href="../css/font-awesome.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/color-1.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     </head>
     <body>
 
@@ -22,7 +23,8 @@
             <div class="container">
                 <div class="header-main d-flex justify-content-between align-items-center">
                 <div class="header-logo">
-                    <a href="../index.html"><span>Ti</span>ARGET</a>
+                    <img class="img-logo" src="../images/tiarget-logo.png" alt="TiARGET Logo">
+                    <a href="../index.html"><span>Tix</span>ETH</a>
                 </div>
                 <button type="button" class="header-hamburger-btn js-header-menu-toggler">
                     <span></span>
@@ -49,34 +51,38 @@
                     <div class="col-md-8">
                         <div class="section-title text-center">
                             <h2 class="title">account</h2>
-                            <h1 class="subtitle">Address: <span id="account"></span></h1>
+                            <h1 class="subtitle">Address: <span id="account">0xB32dFFE225C690C6668cfF31F7A86BF24d6E547e</span></h1>
                         </div>
                     </div>
                 </div>
 
-                <!-- owned ticket start -->
-                <div class="ticket-container">
-                    <div class="ticket">
-                        <h2 id="ticket-name" class="ticket-title">itzy 2nd world tour born to be</h2>
-                        <hr>
-                        <div class="ticket-detail">
-                            <h2 id="ticket-price" class="ticket-price">Price:&ensp; <span>1.5 ETH</span></h2>
-                            <h2 class="total-tickets">Total Tickets:&nbsp; <span>1000</span></h2>
-                            <p id="original-address" class="original-address">Original Owner:&emsp; <span>0xc5e43E3Bf03719FCdc551a0dbD6B8f5779d4C8ca</span></p>
-                            <p id="current-address" class="current-address">Current Owner:&emsp; <span>0xB32dFFE225C690C6668cfF31F7A86BF24d6E547e</span></p>
-                        </div>
-                        <div class="ticket-rip">
-                            <div class="circle-left"></div>
-                            <div class="rip-line"></div>
-                            <div class="circle-right"></div>
-                        </div>
-                            <div class="ticket-sub-detail">
-                            <!-- <a href="#pop-up-form" class="btn btn-theme-outline">sell ticket</a> -->
-                                <button id="show-popup" class="btn btn-theme-outline">sell ticket</button>
+                <!-- ticket items container start -->
+                <div class="row justify-content-center">
+                    <!-- owned ticket start -->
+                    <div class="ticket-container">
+                        <div class="ticket">
+                            <h2 id="ticket-name" class="ticket-title">itzy 2nd world tour born to be</h2>
+                            <hr>
+                            <div class="ticket-detail">
+                                <h2 class="ticket-price">Price:&ensp; <span id="ticket-price">1.5 ETH</span></h2>
+                                <h2 class="total-tickets">Total Tickets:&nbsp; <span id="total-tickets">1</span></h2>
+                                <p  class="original-address">Original Owner:&emsp; <span id="original-address">0xc5e43E3Bf03719FCdc551a0dbD6B8f5779d4C8ca</span></p>
+                                <p  class="current-address">Current Owner:&emsp; <span id="current-address">0xB32dFFE225C690C6668cfF31F7A86BF24d6E547e</span></p>
                             </div>
+                            <div class="ticket-rip">
+                                <div class="circle-left"></div>
+                                <div class="rip-line"></div>
+                                <div class="circle-right"></div>
+                            </div>
+                                <div class="ticket-sub-detail">
+                                <!-- <a href="#pop-up-form" class="btn btn-theme-outline">sell ticket</a> -->
+                                    <button id="show-popup" class="btn btn-theme-outline">sell ticket</button>
+                                </div>
+                        </div>
                     </div>
+                    <!-- owned ticket end -->
                 </div>
-                <!-- owned ticket end -->
+                <!-- ticket items container end -->
             </div>
             </section>
             <!-- sell tickets section end -->

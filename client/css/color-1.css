@@ -2,6 +2,7 @@
     --hue-value-1: 243;
     --hue-value-2: 230;
     --main-color: hsl(var(--hue-value-1), 40%, 50%);
+    --secondary-color: hsl(var(--hue-value-1), 30%, 75%);
     --button-hover-color: hsl(var(--hue-value-1), 57%, 53%);
     --body-bg-color: hsl(var(--hue-value-1), 47%, 85%);
     --border-color-2: hsl(var(--hue-value-1), 40%, 93%);

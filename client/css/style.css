@@ -33,7 +33,6 @@
   --orange-light: hsl(22, 85%, 80%);
   --select-box-bg-color: hsl(0, 0%, 100%);
   --border-color-1: hsl(0, 0%, 90%);
-  --border-color-2: hsl(0, 0%, 72%);
 }
 
 /* 04. =base */
@@ -97,6 +96,11 @@ h1,h2,h3,h4,h5,h6{
 }
 .section-title .subtitle{
   font-size: 20px;
+  font-weight: 00;
+  color: var(--black-90);
+}
+.section-title #account{
+  font-size: 20px;
   font-weight: 300;
   color: var(--black-90);
 }
@@ -142,37 +146,31 @@ h1,h2,h3,h4,h5,h6{
 /* 11. =rectangular img */
 .rectangular-img{
   max-width: 550px;
-  background-color: red;
   margin: auto;
   position: relative;
   z-index: 1;
+  box-shadow: 2px 2px 20px 5px rgba(0, 0, 0, 0.30);
 }
-/* .rectangular-img-inner {
-  text-align: center;
-  border-radius: 0 0 180px 180px;
-  overflow: hidden;
-} */
-/* .rectangular-img-rectangle {
-  height: 360px;
-  width: 360px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  border-radius: 50%;
-}
-.rectangular-img image {
-  position: relative;
-  z-index: 1;
-} */
 
 /* 19. =header */
 .header{
-  border-bottom: 1px solid var(--border-color-2);
+  background-color: var(--secondary-color);
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.30);
+}
+.header-logo {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+.header-logo .img-logo{
+  width: 80px;
+  height: 80px;
 }
 .header-logo a{
   font-size: 50px;
   font-weight: 700;
-  color: var(--black-70);
+  color: var(--black-90);
+  margin-left: 20px;
 }
 .header-logo span{
   color: var(--main-color);
@@ -213,6 +211,7 @@ h1,h2,h3,h4,h5,h6{
   font-size: 90px;
   font-weight: 700;
   text-transform: uppercase;
+  text-shadow: 5px 5px 8px var(--white);
 }
 .banner-text h2{
   font-size: 30px;
@@ -286,6 +285,11 @@ hr{
   font-weight: 500;
   color: var(--black-70);
 }
+.ticket-detail .warning{
+  font-size: 13px;
+  font-weight: 700;
+  color: red;
+}
 .ticket-sub-detail{
   display: flex;
   justify-content: center;
@@ -329,13 +333,6 @@ hr{
   to {transform: translateY(4px);}
 }
 
-
-.center{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 .popup{
   position: absolute;
   top: -150%;
@@ -388,6 +385,40 @@ hr{
   border-radius: 5px;
 }
 .popup .form .form-element .btn-theme{
+  width: 100%;
+}
+
+
+.form-event{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.25);
+  width: 600px;
+  padding: 20px 30px;
+  background: var(--white);
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+}
+.form-event .form .form-element{
+  margin: 15px 0px;
+}
+.form-event .form .form-element label{
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+.form-event .form .form-element input{
+  margin-top: 5px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: 1px solid var(--black-70);
+  border-radius: 5px;
+}
+.form-event .form .form-element .btn-theme{
   width: 100%;
 }
 
