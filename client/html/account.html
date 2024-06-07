@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    />
+    <title>TiARGET</title>
+        <link rel="stylesheet" href="../css/font-awesome.css" />
+        <link rel="stylesheet" href="../css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../css/color-1.css" />
+        <link rel="stylesheet" href="../css/style.css" />
+    </head>
+    <body>
+
+    <!-- main wrapper start -->
+        <div class="main-wrapper">
+            <!-- header start -->
+            <header class="header">
+            <div class="container">
+                <div class="header-main d-flex justify-content-between align-items-center">
+                <div class="header-logo">
+                    <a href="../index.html"><span>Ti</span>ARGET</a>
+                </div>
+                <button type="button" class="header-hamburger-btn js-header-menu-toggler">
+                    <span></span>
+                </button>
+                <div class="header-backdrop js-header-backdrop"></div>
+                <nav class="header-menu js-headermenu">
+                    <ul class="menu">
+                        <li class="menu-item"><a href="../index.html">Events</a></li>
+                        <li class="menu-item"><a href="buy_tickets.html">Buy Tickets</a></li>
+                        <li class="menu-item"><a href="create_event.html">Create Event</a></li>
+                        <li class="menu-item"><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                </div>
+            </div>
+
+            </header>
+            <!-- header end -->
+
+            <!-- sell tickets section start -->
+            <section id="buy-tickets-section" class="buy-tickets-section section padding">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="section-title text-center">
+                            <h2 class="title">account</h2>
+                            <h1 class="subtitle">Address: <span>0xc5e43E3Bf03719FCdc551a0dbD6B8f5779d4C8ca</span></h1>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ticket item start -->
+                <div class="ticket-container">
+                    <div class="ticket">
+                        <h2 class="ticket-title">itzy 2nd world tour born to be</h2>
+                        <hr>
+                        <div class="ticket-detail">
+                            <h2 class="ticket-price">Price:&ensp; <span>1.5 ETH</span></h2>
+                            <h2 class="total-tickets">Total Tickets:&nbsp; <span>1000</span></h2>
+                            <p class="original-address">Original Owner:&emsp; <span>0xc5e43E3Bf03719FCdc551a0dbD6B8f5779d4C8ca</span></p>
+                            <p class="current-address">Current Owner:&emsp; <span>0xB32dFFE225C690C6668cfF31F7A86BF24d6E547e</span></p>
+                        </div>
+                        <div class="ticket-rip">
+                            <div class="circle-left"></div>
+                            <div class="rip-line"></div>
+                            <div class="circle-right"></div>
+                        </div>
+                            <div class="ticket-sub-detail">
+                            <!-- <a href="#pop-up-form" class="btn btn-theme-outline">sell ticket</a> -->
+                                <button id="show-popup" class="btn btn-theme-outline">sell ticket</button>
+                            </div>
+                    </div>
+                </div>
+                <!-- ticket item end -->
+            </div>
+            </section>
+            <!-- sell tickets section end -->
+
+            <!-- pop-up form start -->
+            <div class="popup">
+                <div class="close-btn">&times;</div>
+                <div class="form">
+                    <div class="form-element">
+                        <label for="selling-price">Selling Price</label>
+                        <input type="number" placeholder="Enter selling price"> 
+                    </div>
+                    <div class="form-element">
+                        <label for="original-price">Original Price</label>
+                        <input type="number" placeholder="Enter original price">
+                    </div>
+                    <div class="form-element">
+                        <button type="sell-ticket" class="btn btn-theme btn-block btn-form">Sell Ticket</button>
+                    </div>
+                </div>
+            </div>
+            <!-- pop-up form end -->
+                            
+            
+
+        </div>
+
+        <script type="module" src="../javascript/bootstrap.bundle.min.js"></script>
+        <script type="module" src="../javascript/popup.js"></script>
+        <script type="module" src="../index.js"></script>
+    </body>
+</html>
